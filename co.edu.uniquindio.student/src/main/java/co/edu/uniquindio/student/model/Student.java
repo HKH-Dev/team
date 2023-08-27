@@ -1,15 +1,17 @@
 package co.edu.uniquindio.student.model;
 
+import java.util.Arrays;
+
 public class Student {
     private String name;
     private int age;
     private String email;
     private String kindOfStudent;
-    private float GradeOne;
-    private float GradeTwo;
-    private float GradeThree;
+    private float gradeOne;
+    private float gradeTwo;
+    private float gradeThree;
 
-    float[] grades = new float[3];
+    double[] grades = new double[3];
 
     public String getName() {
         return name;
@@ -44,35 +46,27 @@ public class Student {
     }
 
     public float getGradeOne() {
-        return GradeOne;
+        return gradeOne;
     }
 
     public void setGradeOne(float gradeOne) {
-        GradeOne = gradeOne;
+        this.gradeOne = gradeOne;
     }
 
     public float getGradeTwo() {
-        return GradeTwo;
+        return gradeTwo;
     }
 
     public void setGradeTwo(float gradeTwo) {
-        GradeTwo = gradeTwo;
+        this.gradeTwo = gradeTwo;
     }
 
     public float getGradeThree() {
-        return GradeThree;
+        return gradeThree;
     }
 
     public void setGradeThree(float gradeThree) {
-        GradeThree = gradeThree;
-    }
-
-    public float[] getGrades() {
-        return grades;
-    }
-
-    public void setGrades(float[] grades) {
-        this.grades = grades;
+        this.gradeThree = gradeThree;
     }
 
     public Student(String name, int age, String email, String kindOfStudent, float gradeOne, float gradeTwo, float gradeThree) {
@@ -80,8 +74,8 @@ public class Student {
         this.age = age;
         this.email = email;
         this.kindOfStudent = kindOfStudent;
-        GradeOne = gradeOne;
-        GradeTwo = gradeTwo;
-        GradeThree = gradeThree;
+        this.gradeOne = gradeOne;
+        this.gradeTwo = gradeTwo;
+        this.gradeThree = gradeThree;
     }
 }

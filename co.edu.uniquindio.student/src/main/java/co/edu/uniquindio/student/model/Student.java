@@ -78,4 +78,10 @@ public class Student {
         this.gradeTwo = gradeTwo;
         this.gradeThree = gradeThree;
     }
+
+    // Method to calculate average grade
+    public double calculateAverageGrade() {
+        return (gradeOne + gradeTwo + gradeThree) / 3; // search how to use the method .length
+    }
+
 }

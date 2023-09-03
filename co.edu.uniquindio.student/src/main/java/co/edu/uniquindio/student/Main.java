@@ -1,9 +1,6 @@
 package co.edu.uniquindio.student;
 
 import co.edu.uniquindio.student.model.Student;
-import org.w3c.dom.ls.LSOutput;
-
-import java.lang.reflect.Array;
 
 public class Main {
     public static void main(String[] args) {
@@ -15,8 +12,6 @@ public class Main {
 
         System.out.println("Average student002: " + student002.calculateAverageGrade());
 
-
+        System.out.println();
     }
-
-
 }
